@@ -50,3 +50,7 @@ def preview(request, path):
     return render(request, 'scrapper/preview.html', context={
         'path': path
     })
+
+
+def login(request):
+    return render(request, 'scrapper/login.html')

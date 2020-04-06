@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <form action="">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="ip">IP:</label>
+        <input type="text" id="ip" name="ip"><br><br>
+
+        <label for="instance_number">Instance Number:</label>
+        <input type="text" id="instance_number" name="instance_number"><br><br>
+
+        <input type="submit" value="Submit" disabled>
+    </form>
+{% endblock %}
