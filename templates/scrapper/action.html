@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <form action="{% url 'action' %}" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form.title }}
+        <br>
+        {{ form.file }}
+        <br>
+        <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <br>
+    {{ path }}
+    <br>
+    {% if data %}
+        <form action="{% url 'action' %}" method="post">
+            {% csrf_token %}
+            {{ data | safe }}
+            <button type="submit" id="submit_sds">Submit</button>
+            <a href="/{{ path }}">Preview PDF</a>
+        </form>
+    {% endif %}
+    {{ result }}
+
+
+{% endblock %}
