@@ -29,13 +29,13 @@
     "SECTION 2: Hazards identification": {
       "2.1 Classification of the substance or mixture": {
         "Default": "",
-        "Classification according to Regulation <left>EC<right> No 1272/2008 as amended": {
+        "Classification according to Regulation (EC) No 1272/2008 as amended": {
           "Health Hazards": ""
         }
       },
       "2.2 Label Elements": {
         "Signal Words": "",
-        "Hazard Statement<left>s<right>": "",
+        "Hazard Statement(s)": "",
         "Supplemental label information": "",
         "Precautionary Statements ": {
           "Prevention": "",
@@ -122,7 +122,7 @@
       "7.2 Conditions for safe storage, including any incompatibilities": {
         "Default": ""
       },
-      "7.3 Specific end use<left>s<right>": {
+      "7.3 Specific end use(s)": {
         "Default": ""
       }
     },
@@ -142,8 +142,11 @@
       }
     },
     "SECTION 9: Physical and chemical properties": {
+      "Default": "",
       "9.1 Information on basic physical and chemical properties": {
+        "Default": "",
         "Appearance": {
+          "Default": "",
           "Physical state": "",
           "Form": "",
           "Color": ""
@@ -155,18 +158,18 @@
         "Boiling Point": "",
         "Flash Point": "",
         "Evaporation Rate": "",
-        "Flammability <left>solid, gas<right>": "",
-        "Flammability Limit - Upper <left>%<right>": "",
-        "Flammability Limit - Lower <left>%<right>": "",
+        "Flammability (solid, gas)": "",
+        "Flammability Limit - Upper (%)": "",
+        "Flammability Limit - Lower (%)": "",
         "Vapor pressure": "",
-        "Vapor density <left>air=1<right>": "",
+        "Vapor density (air=1)": "",
         "Density": "",
         "Relative density": "",
-        "Solubility<left>ies<right>": {
+        "Solubility(ies)": {
           "Solubility in Water": "",
-          "Solubility <left>other<right>": ""
+          "Solubility (other)": ""
         },
-        "Partition coefficient <left>n-octanol/water<right>": "",
+        "Partition coefficient (n-octanol/water)": "",
         "Self Ignition Temperature": "",
         "Decomposition Temperature": "",
         "Kinematic viscosity": "",
@@ -174,8 +177,7 @@
       },
       "9.2 Other information": {
         "Explosive properties": "",
-        "Oxidizing properties": "",
-        "": "NaN"
+        "Oxidizing properties": ""
       }
     },
     "SECTION 10: Stability and reactivity": {
@@ -345,7 +347,7 @@
       "14.2 UN proper shipping name": {
         "Default": ""
       },
-      "14.3 Transport hazard class<left>es<right>": {
+      "14.3 Transport hazard class(es)": {
         "Default": ""
       },
       "14.4 Packing group": {
@@ -364,12 +366,12 @@
     "SECTION 15: Regulatory information": {
       "15.1 Safety, health and environmental regulations/legislation specific for the substance or mixture": {
         "EU Regulations": "",
-        "Regulation <left>EC<right> No. 2037/2000 Substances that deplete the ozone layer": "",
+        "Regulation (EC) No. 2037/2000 Substances that deplete the ozone layer": "",
         "EU. REACH Annex XIV, Substances Subject to Authorization": "",
-        "Regulation <left>EC<right> No. 850/2004 on persistent organic pollutants": "",
-        "Regulation <left>EC<right> No. 649/2012 Import and export of dangerous chemicals": "",
-        "EU. REACH Candidate List of Substances of Very High Concern for Authorization <left>SVHC<right>": "",
-        "Regulation <left>EC<right> No. 1907/2006 Annex XVII Substances subject to restriction on marketing and use": {
+        "Regulation (EC) No. 850/2004 on persistent organic pollutants": "",
+        "Regulation (EC) No. 649/2012 Import and export of dangerous chemicals": "",
+        "EU. REACH Candidate List of Substances of Very High Concern for Authorization (SVHC)": "",
+        "Regulation (EC) No. 1907/2006 Annex XVII Substances subject to restriction on marketing and use": {
           "Table": {
             "Chemical name": "",
             "CAS-No.": "",
@@ -378,8 +380,8 @@
         },
         "Directive 2004/37/EC on the protection of workers from the risks related to exposure to carcinogens and mutagens at work.": "",
         "Directive 92/85/EEC: on the safety and health of pregnant workers and workers who have recently given birth or are breast feeding.": "",
-        "EU. Directive 2012/18/EU <left>SEVESO III<right> on major accident hazards involving dangerous substances, Annex I": "",
-        "EU. Regulation No. 166/2006 PRTR <left>Pollutant Release and Transfer Registry<right>, Annex II: Pollutants": "",
+        "EU. Directive 2012/18/EU (SEVESO III) on major accident hazards involving dangerous substances, Annex I": "",
+        "EU. Regulation No. 166/2006 PRTR (Pollutant Release and Transfer Registry), Annex II: Pollutants": "",
         "Directive 98/24/EC on the protection of workers from the risks related to chemical agents at work": {
           "Table": {
             "Chemical name": "",

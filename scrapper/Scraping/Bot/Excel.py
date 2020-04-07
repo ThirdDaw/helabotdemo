@@ -9,7 +9,7 @@ from openpyxl import Workbook
 import pandas as pd
 
 
-def Identification(value, sheets):  # Save to the Excel Sheet
+def Identification(value, sheets): #Save to the Excel Sheet
     wbkName = 'Data\SDS.xlsx'
     wbk = openpyxl.load_workbook(wbkName)
     sheet = wbk[sheets]
@@ -28,8 +28,7 @@ def Identification(value, sheets):  # Save to the Excel Sheet
     wbk.save(wbkName)
     wbk.close()
 
-
-def Hazard(value, sheets):
+def Hazard (value,sheets):
     wbkName = 'Data\SDS.xlsx'
     wbk = openpyxl.load_workbook(wbkName)
 
@@ -44,26 +43,28 @@ def Hazard(value, sheets):
     sheet["E12"] = value[7]
     sheet["E14"] = value[8]
 
+
+
+
     wbk.save(wbkName)
     wbk.close()
 
 
 def image_insert():
-    # wb = openpyxl.Workbook("Data\SDS.xlsx")
-    openpyxl_version = openpyxl.__version__
-    workbook = xlsxwriter.Workbook("Data\SDS_Standard.xlsx")
+   # wb = openpyxl.Workbook("Data\SDS.xlsx")
+   openpyxl_version = openpyxl.__version__
+   workbook = xlsxwriter.Workbook ("Data\SDS_Standard.xlsx")
 
-    worksheet = workbook.add_worksheet()
-    worksheet.set_column("B1:B5", 7)
-    worksheet.set_default_row(45)
-    image = ['Image15.png',
-             'Image16.png']
-    image_row = 0
-    image_col = 0
-    for img in image:
-        worksheet.insert_image(image_row, image_col, img,
-                               {'x_scale': 0.5, 'y_scale': 0.5, 'x_offset': 5, 'y_offset': 5, 'positioning': 1})
-        image_row += 1
+   worksheet = workbook.add_worksheet()
+   worksheet.set_column("B1:B5",7)
+   worksheet.set_default_row(45)
+   image = ['Image15.png',
+            'Image16.png']
+   image_row = 0
+   image_col = 0
+   for img in image:
+       worksheet.insert_image(image_row,image_col,img,{'x_scale': 0.5, 'y_scale':0.5, 'x_offset':5,'y_offset':5, 'positioning': 1})
+       image_row+=1
 
-    worksheet.write(1, 1, "Label")
-    workbook.close()
+   worksheet.write(1,1,"Label")
+   workbook.close()

@@ -7,7 +7,7 @@ import scrapper.Scraping.Data
 class Pdf:
 
     def __init__(self, path):
-        self.path = str(path)
+        self.path = path
         self.page = ''
         self.file = ''
         self.pdf_file = p2
@@ -32,7 +32,7 @@ class Pdf:
             string = string + str(pageObj.extractText())
 
         PDFfile.close()
-        ch_string = string.replace("\n", "")
+        ch_string = string.replace("\n", "").replace(")","<right>").replace("(","<left>")
         ch_string = ch_string+" END"
         return ch_string
 

@@ -40,8 +40,15 @@
                     file</a>
             {% endif %}
         </div>
-        <div class="col-sm">
-            <img src="{% static 'Section-9.jpg' %}" alt="PDF placeholder" width="540" height="600">
-        </div>
+        {% if data %}
+            <div class="col-sm">
+                <img src="{% static 'Section-9.jpg' %}" alt="PDF placeholder" width="540" height="600">
+            </div>
+        {% endif %}
+        {% if pdfpath %}
+            <div class="col-sm">
+                <img src="{% static 'Section-9.jpg' %}" alt="PDF placeholder" width="540" height="600">
+            </div>
+        {% endif %}
     </div>
 {% endblock %}

@@ -11,7 +11,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
 from scrapper.Scraping.Data import Paths
-from scrapper.Scraping.Feature.Helabot import helabot
+from scrapper.Scraping.Bot.Helabot import helabot
 from .forms import UploadFileForm
 from .utils import *
 
@@ -27,12 +27,20 @@ def action(request):
         if form.is_valid():
             file = request.FILES['file']
             file_name = default_storage.save(request.POST['title'] + '.pdf', ContentFile(file.read()))
+            # HELASOFT = helabot(os.path.dirname(os.path.dirname(__file__)) + "/media/" + str(file_name),
+            #                    "SECTION 1: Identification of the substance/mixture and of the company/undertaking")
+            #
+            # content = {
+            #     "SECTION 1: Identification of the substance/mixture and of the company/undertaking": ast.literal_eval(
+            #         HELASOFT.get_json())}
             HELASOFT = helabot(os.path.dirname(os.path.dirname(__file__)) + "/media/" + str(file_name),
-                               "SECTION 1: Identification of the substance/mixture and of the company/undertaking")
+                               "SECTION 9: Physical and chemical properties")
 
-            content = {
-                "SECTION 1: Identification of the substance/mixture and of the company/undertaking": ast.literal_eval(
-                    HELASOFT.get_json())}
+            # content = {
+            #     "SECTION 9: Physical and chemical properties": ast.literal_eval(
+            #         HELASOFT.get_json())}
+
+            content = ast.literal_eval(HELASOFT.get_json())
 
             json_file = default_storage.save(file_name.replace(".pdf", ".json"),
                                              ContentFile(str(content).replace("\'", "\"")))

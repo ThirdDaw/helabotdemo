@@ -1,6 +1,6 @@
 # Get PDF and convert to TXT
-import scrapper.Scraping.Feature
-from scrapper.Scraping.Feature import Json, Regex
+import scrapper.Scraping.Bot
+from scrapper.Scraping.Bot import Json, Regex
 from scrapper.Scraping.Data import Dictionaries
 
 
@@ -36,7 +36,8 @@ class sds:
         nextelem = key[(section_item) % len(key)]
         first = Regex.reg(key[section_item - 1], self.txt_sds)
         second = Regex.reg(nextelem, self.txt_sds)
-        new_txt = self.txt_sds[first[-1]:second[0]]+" END"
+        new_txt = self.txt_sds[first[0]:second[0]]
+
         return new_txt
 
     def join(self, list_of_key_words, united_list):  # Get list with key(as #LIST) words and full sds(as #LIST)
@@ -56,5 +57,6 @@ class sds:
     def get_value(self, item1, item2, section_content):  # Indentifired value beetween @list_of_key_words
         first = Regex.reg(item1, section_content)
         second = Regex.reg(item2, section_content)
+
 
         return section_content[first[-1]:second[0]]
