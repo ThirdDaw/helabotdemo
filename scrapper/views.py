@@ -54,9 +54,10 @@ def action(request):
         result_dict = result_json_file.read()
 
         path_to_pdf_file = path_to_json.replace(".json", ".pdf")
+        path_to_json_file = path_to_pdf_file.replace(".pdf", ".json")
         # result_json = dict_to_json(path_to_json, result_dict)
         return render(request, "scrapper/action.html",
-                      {'form': form, 'result': result_dict, 'pdfpath': path_to_pdf_file})
+                      {'form': form, 'result': result_dict, 'pdfpath': path_to_pdf_file, 'jsonpath': path_to_json_file})
     else:
         form = UploadFileForm()
     return render(request, "scrapper/action.html", {'form': form})

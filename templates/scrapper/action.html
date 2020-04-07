@@ -3,35 +3,45 @@
 {% load static %}
 
 {% block content %}
-    <form action="{% url 'action' %}" enctype="multipart/form-data" method="post">
-        {% csrf_token %}
-        {{ form.title }}
-        <br>
-        {{ form.file }}
-        <br>
-        <button type="submit" id="submit-button">Submit</button>
-    </form>
-    <br>
+    <div class="row">
+        <div class="col-sm">
+            <form action="{% url 'action' %}" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                {{ form.title }}
+                <br>
+                {{ form.file }}
+                <br>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+            <br>
 
-    <br>
-    {% if data %}
-        <form action="{% url 'action' %}" method="post">
-            {% csrf_token %}
-            <label for="path_to_file">Path to file: </label>
-            {{ path }}
-            <input type="text" id="path_to_file" name="path_to_file" value="{{ path }}" hidden>
-            {{ data | safe }}
-            <button type="submit" id="submit_sds">Submit</button>
-            {#            <a href="/{{ path }}">Preview PDF</a>#}
-        </form>
-    {% endif %}
+            <br>
+            {% if data %}
+                <form action="{% url 'action' %}" method="post">
+                    {% csrf_token %}
+                    <label for="path_to_file">Path to file: </label>
+                    {{ path }}
+                    <input type="text" id="path_to_file" name="path_to_file" value="{{ path }}" hidden>
+                    {{ data | safe }}
+                    <button type="submit" id="submit_sds">Submit</button>
+                    {#            <a href="/{{ path }}">Preview PDF</a>#}
+                </form>
+            {% endif %}
 
-    {{ result }}
+            {{ result }}
 
-    <br>
-    {% if pdfpath %}
-        <a href="/{{ pdfpath }}">Preview PDF</a>
-    {% endif %}
-
-
+            <br>
+            {% if pdfpath %}
+                <a href="/{{ pdfpath }}">Preview PDF</a>
+                <br>
+                <a href="/{{ jsonpath }}" download="data.json">Download JSON</a>
+                <br>
+                <a href="{% static 'SDS_Standard.xlsx' %}" download="{% static 'SDS_Standard.xlsx' %}">Download Excel
+                    file</a>
+            {% endif %}
+        </div>
+        <div class="col-sm">
+            <img src="{% static 'pdf-placeholder.png' %}" alt="PDF placeholder" width="540" height="600">
+        </div>
+    </div>
 {% endblock %}
