@@ -39,7 +39,7 @@ def action(request):
             # content = {
             #     "SECTION 9: Physical and chemical properties": ast.literal_eval(
             #         HELASOFT.get_json())}
-
+            print(HELASOFT.get_json())
             content = ast.literal_eval(HELASOFT.get_json())
 
             json_file = default_storage.save(file_name.replace(".pdf", ".json"),

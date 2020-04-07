@@ -69,8 +69,9 @@ class helabot():
         # f = str(d).replace("<left>","(").replace("<right>",")")
         j = json.dumps(d, indent=4)
         pathlib.Path(Paths.get_filled_json()).write_text(j, encoding="utf-8")
-        return j.replace("\"\": null", "")[:j.rfind(",")] + j.replace("\"\": null", "")[j.rfind(",") + 2:]
-
+        print()
+        return (j.replace("\"\": null", "")[:j.rfind(",")] + j.replace("\"\": null", "")[j.rfind(",") + 2:]).replace(
+            "\"\": \"\"", "")
 
 # # ===================================================================================================================
 # #
