@@ -2,6 +2,7 @@ import os
 import time
 import json
 from PyPDF2 import PdfFileReader
+import ast
 
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
@@ -9,6 +10,8 @@ from django.conf import settings
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
+from scrapper.Scraping.Data import Paths
+from scrapper.Scraping.Feature.Helabot import helabot
 from .forms import UploadFileForm
 from .utils import *
 
@@ -24,23 +27,36 @@ def action(request):
         if form.is_valid():
             file = request.FILES['file']
             file_name = default_storage.save(request.POST['title'] + '.pdf', ContentFile(file.read()))
+            HELASOFT = helabot(os.path.dirname(os.path.dirname(__file__)) + "/media/" + str(file_name),
+                               "SECTION 1: Identification of the substance/mixture and of the company/undertaking")
 
-            # HERE GOES FUNCTION THAT TRANSLATES PDF TO JSON
+            content = {
+                "SECTION 1: Identification of the substance/mixture and of the company/undertaking": ast.literal_eval(
+                    HELASOFT.get_json())}
+
             json_file = default_storage.save(file_name.replace(".pdf", ".json"),
-                                             ContentFile(str(GLOBAL_TEST_JSON).replace("\'", "\"")))
+                                             ContentFile(str(content).replace("\'", "\"")))
 
-            data = dict_to_html_ret_str(GLOBAL_TEST_JSON)
+            data = dict_to_html_ret_str(content)
 
-            # TODO with saving file, save JSON with exact same name to place new values after changing
             path = 'media/' + file_name
 
             return render(request, "scrapper/action.html", {'form': form, 'path': path, 'data': data})
         # data = dict_to_html_ret_str(json.dumps(request.POST.dict()))
         full_req = request.POST.dict()
         full_req.pop('csrfmiddlewaretoken')
-        result = full_req
-        # JUST FOR TESTING DICTIONARY
-        return render(request, "scrapper/action.html", {'form': form, 'result': result})
+        path_to_json = str(full_req.pop('path_to_file')).replace(".pdf", ".json")
+
+        dict_to_json(path_to_json, full_req)
+
+        result_json_file = open(path_to_json, 'r')
+
+        result_dict = result_json_file.read()
+
+        path_to_pdf_file = path_to_json.replace(".json", ".pdf")
+        # result_json = dict_to_json(path_to_json, result_dict)
+        return render(request, "scrapper/action.html",
+                      {'form': form, 'result': result_dict, 'pdfpath': path_to_pdf_file})
     else:
         form = UploadFileForm()
     return render(request, "scrapper/action.html", {'form': form})

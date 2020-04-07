@@ -1,0 +1,414 @@
+{
+    "SECTION 1: Identification of the substance/mixture and of the company/undertaking": {
+      "1.1 Product identifier": {
+        "Product name": "",
+        "Additional identification": {
+          "Chemical name": "",
+          "INDEX No.": "",
+          "CAS-No.": "",
+          "EC No.": "",
+          "REACH Registration No.": ""
+        }
+      },
+
+      "1.2 Relevant identified uses of the substance or mixture and uses advised against": {
+
+            "Identified uses": "",
+            "Uses advised against": ""
+      },
+      "1.3 Details of the supplier of the safety data sheet":{
+        "Company Name": "",
+        "Telephone": "",
+        "E-mail": ""
+      },
+      "1.4 Emergency telephone number": {
+        "24-Hour Health Emergency": "",
+        "END": ""
+      }
+    },
+    "SECTION 2: Hazards identification": {
+      "2.1 Classification of the substance or mixture": {
+        "Default": "",
+        "Classification according to Regulation (EC) No 1272/2008 as amended": {
+          "Health Hazards": ""
+        }
+      },
+      "2.2 Label Elements": {
+        "Signal Words": "",
+        "Hazard Statement(s)": "",
+        "Supplemental label information": "",
+        "Precautionary Statements ": {
+          "Prevention": "",
+          "Response": "",
+          "Disposal": ""
+        }
+      },
+      "2.3 Other hazards": {
+        "Other hazards": ""
+      }
+    },
+    "SECTION 3: Composition/information on ingredients": {
+      "3.1 Substances": {
+        "Chemical name": "",
+        "INDEX No.": "",
+        "CAS-No.": "",
+        "EC No.": "",
+        "REACH Registration No.": "",
+        "Table": {
+          "Chemical name": "",
+          "Concentration": "",
+          "CAS-No.": "",
+          "EC No.": "",
+          "REACH Registration No.": "",
+          "M-Factor": "",
+          "Notes": ""
+        }
+      }
+    },
+    "SECTION 4: First aid measures": {
+      "General": {
+        "General": ""
+      },
+      "4.1 Description of first aid measures Inhalation": {
+        "Inhalation": "",
+        "Skin Contact": "",
+        "Eye contact": "",
+        "Ingestion": ""
+      },
+      "4.2 Most important symptoms and effects, both acute and delayed": {
+        "Default": ""
+      },
+      "4.3 Indication of any immediate medical attention and special treatment needed Hazards": {
+        "Hazards": "",
+        "Treatment": ""
+      }
+    },
+    "SECTION 5: Firefighting measures": {
+      "5.1 Extinguishing media Suitable extinguishing media": {
+        "Default": "",
+        "Unsuitable extinguishing media": ""
+      },
+      "5.2 Special hazards arising from the substance or mixture": {
+        "Default": ""
+      },
+      "5.3 Advice for firefighters Special fire fighting procedures": {
+        "Default": "",
+        "Special protective equipment for fire-fighters": ""
+      }
+    },
+    "SECTION 6: Accidental release measures": {
+      "Default": "",
+      "6.1 Personal precautions, protective equipment and emergency procedures": {
+        "Default": "",
+        "6.1.1 For non-emergency personnel": {
+          "Default": ""
+        },
+        "6.1.2 For emergency responders": {
+          "Default": ""
+        }
+      },
+      "6.2 Environmental Precautions": {
+        "Default": ""
+      },
+      "6.3 Methods and material for containment and cleaning up": {
+        "Default": ""
+      }
+    },
+    "SECTION 7: Handling and storage": {
+      "Default": "",
+      "7.1 Precautions for safe handling": {
+        "Default": ""
+      },
+      "7.2 Conditions for safe storage, including any incompatibilities": {
+        "Default": ""
+      },
+      "7.3 Specific end use(s)": {
+        "Default": ""
+      }
+    },
+    "SECTION 8: Exposure controls/personal protection": {
+      "Default": "",
+      "8.1 Control Parameters Occupational Exposure Limits": {
+        "Table": ""
+      },
+      "8.2 Exposure controls Appropriate Engineering Controls": {
+        "Default": "",
+        "Eye/face protection": "",
+        "Hand Protection": "",
+        "Skin and Body Protection": "",
+        "Respiratory Protection": "",
+        "Hygiene measures": "",
+        "Environmental Controls": ""
+      }
+    },
+    "SECTION 9: Physical and chemical properties": {
+      "Default": "",
+      "9.1 Information on basic physical and chemical properties": {
+        "Default": "",
+        "Appearance": {
+          "Default": "",
+          "Physical state": "",
+          "Form": "",
+          "Color": ""
+        },
+        "Odor": "",
+        "Odor Threshold": "",
+        "pH": "",
+        "Freezing point": "",
+        "Boiling Point": "",
+        "Flash Point": "",
+        "Evaporation Rate": "",
+        "Flammability (solid, gas)": "",
+        "Flammability Limit - Upper (%)": "",
+        "Flammability Limit - Lower (%)": "",
+        "Vapor pressure": "",
+        "Vapor density (air=1)": "",
+        "Density": "",
+        "Relative density": "",
+        "Solubility(ies)": {
+          "Solubility in Water": "",
+          "Solubility (other)": ""
+        },
+        "Partition coefficient (n-octanol/water)": "",
+        "Self Ignition Temperature": "",
+        "Decomposition Temperature": "",
+        "Kinematic viscosity": "",
+        "Dynamic viscosity": ""
+      },
+      "9.2 Other information": {
+        "Explosive properties": "",
+        "Oxidizing properties": ""
+      }
+    },
+    "SECTION 10: Stability and reactivity": {
+      "Default": "",
+      "10.1 Reactivity": {
+        "Default": ""
+      },
+      "10.2 Chemical Stability": {
+        "Default": ""
+      },
+      "10.3 Possibility of hazardous reactions": {
+        "Default": ""
+      },
+      "10.4 Conditions to avoid": {
+        "Default": ""
+      },
+      "10.5 Incompatible Materials": {
+        "Default": ""
+      },
+      "10.6 Hazardous Decomposition ": {
+        "Products": ""
+      }
+    },
+    "SECTION 11: Toxicological information": {
+      "Default": {
+        "Information on likely routes of exposure": {
+          "Inhalation": "",
+          "Skin Contact": "",
+          "Eye contact": "",
+          "Ingestion": ""
+        }
+      },
+      "11.1 Information on toxicological effects": {
+        "Acute toxicity": {
+          "Oral": {
+            "Product": "",
+            "Components": ""
+          },
+          "Dermal": {
+            "Product": "",
+            "Components": ""
+          },
+          "Inhalation": {
+            "Product": "",
+            "Components": ""
+          },
+          "Repeated dose toxicity": {
+            "Product": "",
+            "Components": ""
+          },
+          "Skin Corrosion/Irritation": {
+            "Default": "",
+            "Product": "",
+            "Components": ""
+          },
+          "Serious Eye Damage/Eye Irritation": {
+            "Default": "",
+            "Product": "",
+            "Components": ""
+          },
+          "Respiratory or Skin Sensitization": {
+            "Default": "",
+            "Product": "",
+            "Components": ""
+          }
+        },
+        "Germ Cell Mutagenicity": {
+          "In vitro": {
+            "Product": "",
+            "Components": ""
+          },
+          "In vivo": {
+            "Product": "",
+            "Components": ""
+          },
+          "Carcinogenicity": {
+            "Product": "",
+            "Components": ""
+          },
+          "Reproductive toxicity": {
+            "Product": "",
+            "Components": ""
+          },
+          "Specific Target Organ Toxicity - Single Exposure": {
+            "Product": "",
+            "Components": ""
+          },
+          "Specific Target Organ Toxicity - Repeated Exposure": {
+            "Product": "",
+            "Components": ""
+          },
+          "Aspiration Hazard": {
+            "Product": "",
+            "Components": ""
+          }
+        }
+      }
+    },
+    "SECTION 12: Ecological information": {
+      "12.1 Toxicity": {
+        "Acute toxicity": {
+          "Fish": {
+            "Product": "",
+            "Components": ""
+          },
+          "Aquatic Invertebrates": {
+            "Product": "",
+            "Components": ""
+          },
+          "Toxicity to Aquatic Plants": {
+            "Product": "",
+            "Components": ""
+          },
+          "Toxicity to microorganisms": {
+            "Product": "",
+            "Components": ""
+          }
+        },
+        "Chronic Toxicity": {
+          "Fish": {
+            "Product": "",
+            "Components": ""
+          },
+          "Aquatic Invertebrates": {
+            "Product": "",
+            "Components": ""
+          },
+          "Toxicity to Aquatic Plants": {
+            "Product": "",
+            "Components": ""
+          }
+        }
+      },
+      "12.2 Persistence and Degradability": {
+        "Biodegradation": {
+          "Product": ""
+        },
+        "BOD/COD Ratio": {
+          "Product": ""
+        },
+        "Components": ""
+      },
+      "12.3 Bioaccumulative potential": {
+        "Product": ""
+      },
+      "12.4 Mobility in soil": {
+        "Default": ""
+      },
+      "12.5 Results of PBT and vPvB assessment": {
+        "Default": ""
+      },
+      "12.6 Other adverse effects": {
+        "Default": ""
+      }
+    },
+    "SECTION 13: Disposal considerations": {
+      "13.1 Waste treatment methods": {
+        "General information": "",
+        "Disposal methods": "",
+        "Contaminated Packaging": ""
+      }
+    },
+    "SECTION 14: Transport information": {
+      "14.1 UN number": {
+        "Default": ""
+      },
+      "14.2 UN proper shipping name": {
+        "Default": ""
+      },
+      "14.3 Transport hazard class(es)": {
+        "Default": ""
+      },
+      "14.4 Packing group": {
+        "Default": ""
+      },
+      "14.5 Environmental hazards": {
+        "Default": ""
+      },
+      "14.6 Special precautions for user": {
+        "Default": ""
+      },
+      "14.7 Transport in bulk according to Annex II of Marpol and the IBC Code": {
+        "Default": ""
+      }
+    },
+    "SECTION 15: Regulatory information": {
+      "15.1 Safety, health and environmental regulations/legislation specific for the substance or mixture": {
+        "EU Regulations": "",
+        "Regulation (EC) No. 2037/2000 Substances that deplete the ozone layer": "",
+        "EU. REACH Annex XIV, Substances Subject to Authorization": "",
+        "Regulation (EC) No. 850/2004 on persistent organic pollutants": "",
+        "Regulation (EC) No. 649/2012 Import and export of dangerous chemicals": "",
+        "EU. REACH Candidate List of Substances of Very High Concern for Authorization (SVHC)": "",
+        "Regulation (EC) No. 1907/2006 Annex XVII Substances subject to restriction on marketing and use": {
+          "Table": {
+            "Chemical name": "",
+            "CAS-No.": "",
+            "Concentration": ""
+          }
+        },
+        "Directive 2004/37/EC on the protection of workers from the risks related to exposure to carcinogens and mutagens at work.": "",
+        "Directive 92/85/EEC: on the safety and health of pregnant workers and workers who have recently given birth or are breast feeding.": "",
+        "EU. Directive 2012/18/EU (SEVESO III) on major accident hazards involving dangerous substances, Annex I": "",
+        "EU. Regulation No. 166/2006 PRTR (Pollutant Release and Transfer Registry), Annex II: Pollutants": "",
+        "Directive 98/24/EC on the protection of workers from the risks related to chemical agents at work": {
+          "Table": {
+            "Chemical name": "",
+            "CAS-No.": "",
+            "Concentration": ""
+          }
+        }
+      },
+      "15.2 Chemical safety assessment": {
+        "Default": "",
+        "International regulations": {
+          "Montreal protocol": "",
+          "Stockholm convention": "",
+          "Rotterdam convention": "",
+          "Kyoto protocol": ""
+        }
+      }
+    },
+    "SECTION 16: Other information": {
+      "Abbreviations and acronyms": "",
+      "Key literature references and sources for data": "",
+      "Wording of the H-statements in section 2 and 3": {
+        "Table": {}
+      },
+      "Training information": "",
+      "Revision Information": "",
+      "Disclaimer": ""
+    }
+
+}

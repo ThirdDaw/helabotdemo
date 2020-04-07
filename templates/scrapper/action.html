@@ -12,17 +12,26 @@
         <button type="submit" id="submit-button">Submit</button>
     </form>
     <br>
-    {{ path }}
+
     <br>
     {% if data %}
         <form action="{% url 'action' %}" method="post">
             {% csrf_token %}
+            <label for="path_to_file">Path to file: </label>
+            {{ path }}
+            <input type="text" id="path_to_file" name="path_to_file" value="{{ path }}" hidden>
             {{ data | safe }}
             <button type="submit" id="submit_sds">Submit</button>
-            <a href="/{{ path }}">Preview PDF</a>
+            {#            <a href="/{{ path }}">Preview PDF</a>#}
         </form>
     {% endif %}
+
     {{ result }}
+
+    <br>
+    {% if pdfpath %}
+        <a href="/{{ pdfpath }}">Preview PDF</a>
+    {% endif %}
 
 
 {% endblock %}
